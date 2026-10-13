@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Kızak — sonsuz yokuş aşağı</title>
+<meta name="description" content="Tarayıcıda oynanan sonsuz kızak oyunu. Ağaçlara çarpma, korları topla.">
+<meta name="theme-color" content="#0b1626">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0b1626; }
+  body { display: flex; justify-content: center; }
+  canvas { display: block; touch-action: none; cursor: pointer; }
+  a.kaynak {
+    position: fixed; right: 12px; bottom: 10px; font: 13px "Segoe UI", system-ui, sans-serif;
+    color: #8ecae6; text-decoration: none; opacity: .8;
+  }
+  a.kaynak:hover { opacity: 1; text-decoration: underline; }
+  @media (max-width: 760px) { a.kaynak { display: none; } }
+</style>
+</head>
+<body>
+<canvas id="oyun" aria-label="Kızak oyunu"></canvas>
+<a class="kaynak" href="https://github.com/Enskygr234/kizak">kaynak kod</a>
+<script src="oyun.js"></script>
+</body>
+</html>
